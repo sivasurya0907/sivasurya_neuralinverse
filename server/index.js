@@ -21,7 +21,7 @@ const provider = new JsonRpcProvider(process.env.INFURA_URL);
 // API endpoint to get balance
 app.get('/api/balance', async (req, res) => {
   try {
-      const address = '0xD542FED2821df25B157839d5F9868AD233c238C8'; // Hardcoded for testing
+    
 
       if (!ethers.utils.isAddress(address)) {
           return res.status(400).send('Invalid Ethereum address');

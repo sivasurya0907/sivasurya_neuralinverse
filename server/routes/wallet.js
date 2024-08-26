@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/018805e453ba45ceb5df94e968214724'));
+const web3 = new Web3(new Web3.providers.HttpProvider('https://rinkeyby.infura.io/v3/018805e453ba45ceb5df94e968214724'));
 
 export const getBalance = async (address) => {
   if (!web3.utils.isAddress(address)) {
